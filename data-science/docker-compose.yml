@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jupyter:
+    build: .
+    image: tagup_challenge
+    env_file: .env #aws configuration
+    container_name: tagup_jupyter
+    volumes:
+      - "./Data science challenge.ipynb:/workdir/Data science challenge.ipynb"
+    ports:
+      - "8080:8080"

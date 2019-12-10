@@ -22,7 +22,7 @@ environment: .venv
 
 ## Run jupyter notebook server
 jupyter: fetch environment
-	pipenv run jupyter notebook 
+	pipenv run jupyter notebook --port=8080 --ip=0.0.0.0 --no-browser --allow-root
 
 ## Download data from S3
 fetch:

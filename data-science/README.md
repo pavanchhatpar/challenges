@@ -75,3 +75,9 @@ A few notes to help:
    results should be interpreted. In particular you should be aware of the
    limitations of whatever approach or approaches you take.
 9. Don't hesitate to reach out with any questions.
+
+
+## Setup
+ - Make `.env` file following `.env_format`
+ - Run `docker-compose up` to build a container and run the notebook in it
+ - Notebook server is available at `8080` port
